@@ -1,0 +1,102 @@
+/*======2GIS_styles=======*/
+
+html,
+body,
+
+#container-map {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* HTML-markers */
+.marker, 
+.cluster {
+	font-family: sans-serif;
+	font-size: 10px;
+	padding: 2px;
+	border-radius: 2px;
+	border: solid 1px black;
+	cursor: pointer;
+}
+
+.cluster {
+    background: #ffff00;
+}
+
+.marker {
+	background: #00ffff; /* голубой */
+}
+
+.marker.c_green {
+	background: #00FF00; 
+}
+
+.marker.c_yellow {
+	background: yellow;
+}
+
+.marker.c_red {
+	background: #FA8072;
+}
+
+.marker.c_pink {
+	background: #FF69B4;
+}
+
+/*======================================*/
+.popup {
+    position: absolute;
+    transform: translate(-50%, -100%);
+    display: flex;
+    flex-direction: column;
+    min-width: 100px;
+
+}
+.popup-content {
+    background-color: #555!important;
+    color: #fff;
+    text-align:center;
+    padding: 5px;
+    border-radius: 4px;
+    background: #555!important; /* #fff; */
+    box-shadow: 0 1px 2px 0 rgba(38, 38, 38, 0.2);
+}
+.popup-tip {
+    width: 0;
+    height: 0;
+    align-self: center;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 35px solid #555!important; /* #fff; */
+}
+
+/*==== КНОПКА ===================================*/	
+
+.buttonRoot {
+    width: 32px;
+    box-shadow: 0 1px 3px 0 rgba(38, 38, 38, 0.5);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: #fff;
+}
+.button {
+    padding: 0;
+    outline: 0;
+    border: none;
+    cursor: pointer;
+    background: #fff;
+    width: 32px;
+    height: 32px;
+    color: #262626;
+    box-sizing: border-box;
+}
+.button:hover {
+    opacity: 0.7;
+}
+.button:active {
+    color: #028eff;
+}

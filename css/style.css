@@ -1,0 +1,16 @@
+
+#house_flats_list,
+#flats_checkboxes{
+	overflow: scroll; 
+	max-height: 150px; 
+	width: 100%;
+}
+
+#flats_checkboxes {
+  overflow-x: hidden!important;
+}
+
+#house_flats_list {
+  overflow-x: hidden!important;
+}
+
